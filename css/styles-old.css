@@ -1,132 +1,17 @@
 /** ==============section1================ */
 
-.hero-button:hover {
-  background-color: #404bbf;
-}
-
-.hero-button:focus {
-  background-color: #404bbf;
-}
-
-.hero-button {
-  cursor: pointer;
-}
-
 /** ===================================== */
 /** ==============section2================ */
 
 /** =================================== */
 /** ================section3================ */
 
-.team-item-list {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-
-.team-image {
-  border-radius: 0px 0px 4px 4px;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-.team-subtitle {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-  text-align: center;
-  margin-bottom: 8px;
-}
-.team-item-list {
-  display: flex;
-  flex-direction: row;
-  gap: 24px;
-}
-.team-item-text {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: #434455;
-  text-align: center;
-}
-
 /**==============social=============*/
-
-.messenger-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 24px;
-  width: 232px;
-  height: 40px;
-  margin-left: 16px;
-  margin-top: 28px;
-}
-.messenger-icon {
-  width: 40px;
-  height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  margin-bottom: 32px;
-}
-.social-icon {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: white;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon {
-  fill: #f4f4fd;
-}
-.social-icon:hover {
-  background-color: #404bbf;
-}
-
-.social-icon:focus {
-  background-color: #404bbf;
-}
 
 /** =================================== */
 /** ==============section4================ */
 
-.portfolio {
-  padding: 120px 0 120px 0;
-}
-
-.portfolio-tittle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11;
-  letter-spacing: 0.02em;
-  color: #2e2f42;
-  text-transform: capitalize;
-  text-align: center;
-  margin-bottom: 72px;
-}
-
-.portfolio-item-list {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
-  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.portfolio-item:hover .overlay-cover-text {
-  transform: translateY(0);
-}
-
 .portfolio-shady-wrap {
-  position: relative;
 }
 .portfolio-item {
   width: calc((100% - 48px) / 3);
@@ -139,7 +24,7 @@
 }
 
 .portfolio-image {
-  padding: 32px 16px;
+  padding: 48px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
 }
@@ -267,48 +152,7 @@
   fill: white;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.social-icon-hover {
-  width: 100%;
-  height: 100%;
-  background-color: #4d5ae5;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  fill: white;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.social-icon-hover:hover {
-  background-color: #31d0aa;
-}
 
-.social-icon-hover:focus {
-  background-color: #31d0aa;
-}
-
-.footer-subs-text {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  color: #ffffff;
-  margin-bottom: 16px;
-
-  line-height: 1.5;
-
-  text-align: left;
-}
-
-.footer-subs-link {
-  margin-left: auto;
-  width: 453px;
-  height: 80px;
-}
-.email {
-  display: flex;
-  gap: 24px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 .footer-label {
   display: flex;
 }
@@ -356,19 +200,6 @@
   border: none;
 }
 
-.subscribe:hover {
-  background-color: #404bbf;
-}
-
-.subscribe :focus {
-  background-color: #404bbf;
-}
-
-.icon-footer {
-  margin-left: 16px;
-  fill: #fff;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 /*======================modal======================**/
 .backdrop {
   position: fixed;
