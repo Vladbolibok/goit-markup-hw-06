@@ -11,6 +11,11 @@ img {
 .card.no-gap {
   display: block;
 }
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
 a {
   text-decoration: none;
@@ -301,7 +306,7 @@ ul {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/3desk/people-office-desc@2x.jpg");
-    width: 1158px;
+    width: 1440px;
   }
 }
 
@@ -343,9 +348,8 @@ ul {
     text-align: center;
     color: #fff;
     max-width: 496px;
-
-    margin: 0 auto;
     padding-bottom: 48px;
+    margin: 0 auto;
   }
 
   .hero-button {
@@ -373,21 +377,12 @@ ul {
 }
 
 .features-list {
-  display: flex;
   gap: 24px;
 }
-
 .features-icons {
-  width: 264px;
-  height: 112px;
-  border: 1px solid #8e8f99;
-  border-radius: 4px;
-  background-color: #f4f4fd;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 8px;
+  display: none;
 }
+
 .features-subtitle {
   font-weight: 700;
   font-size: 36px;
@@ -402,7 +397,6 @@ ul {
   .features {
     padding-top: 96px;
     padding-bottom: 96px;
-    width: 736px;
   }
   .features-subtitle {
     width: 356px;
@@ -452,15 +446,15 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 72px 24px;
-    width: 736px;
   }
 
+  .features-icons {
+    display: none;
+  }
   .features-item {
     width: calc((100% - 24px) / 2);
   }
 }
-
-
 
 .features-item-text {
   font-weight: 500;
@@ -469,40 +463,51 @@ ul {
   letter-spacing: 0.02em;
   color: #434455;
 }
-@media screen and(min-width: 1158px) {
- 
+@media screen and (min-width: 1158px) {
   .features {
     width: 1128px;
     padding: 120px 156px;
   }
+  .features-icon {
+    height: 112px;
+  }
+  .features-icons {
+    width: 264px;
+    height: 112px;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    background-color: #f4f4fd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
   .features-list {
     display: flex;
-    
-    
-    gap:  24px;
+
+    gap: 24px;
     width: 1128px;
-    
   }
   .features-item {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: calc((100% - 72px) / 4);
   }
-   .features-item-text {
+
+  .features-item-text {
     font-weight: 400;
   }
- 
+
   .features-subtitle {
     width: 264px;
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
   }
-  
 }
-
+/* старое */
 
 /** ================our team================ */
 .work-team {
@@ -1422,10 +1427,10 @@ ul {
   color: #434455;
   margin-top: 24px;
 }
-.header-address-list {
+/* .header-address-list {
   display: flex;
   flex-direction: column;
-}
+} */
 .sociale-masager-mobile {
   margin: 0 auto;
   margin-top: 48px;
