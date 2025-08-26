@@ -190,7 +190,7 @@ ul {
     color: #404bbf;
   }
 
-  / .header-address-item {
+  .header-address-item {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
@@ -399,6 +399,7 @@ ul {
   .features {
     padding-top: 96px;
     padding-bottom: 96px;
+    width: 768px;
   }
   .features-subtitle {
     width: 356px;
@@ -801,10 +802,7 @@ ul {
   text-align: left;
 }
 .footer-icon-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin: auto;
 }
 .footer-icon-text {
   font-family: "Roboto", sans-serif;
@@ -838,11 +836,9 @@ ul {
     flex-wrap: wrap;
   }
   .footer-icon-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin: 0;
   }
+
   .footer-logo {
     margin-left: 0px;
   }
@@ -865,8 +861,7 @@ ul {
     letter-spacing: 0.02em;
     color: #fff;
 
-    text-align: center;
-    margin: 72px auto 16px;
+    text-align: justify;
   }
 }
 .social-message-icon {
@@ -892,6 +887,12 @@ ul {
     gap: 16px;
     display: flex;
     flex-direction: row;
+  }
+  .footer-label {
+    margin-left: 108px;
+  }
+  .footer-subs-text {
+    margin-left: 108px;
   }
 }
 .social-icon-hover {
@@ -931,6 +932,7 @@ ul {
   flex-direction: row;
   flex-wrap: wrap;
 }
+
 .footer-input {
   border: 1px solid #fff;
   border-radius: 4px;
@@ -980,12 +982,37 @@ ul {
   fill: #fff;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 768px) {
+  .subscribe {
+    border: 1px solid #fff;
+    border-radius: 4px;
 
+    height: 40px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #fff;
+    background: #2e2f42;
+    background-color: transparent;
+    padding-left: 16px;
+    display: flex;
+    justify-content: center;
+    background: #4d5ae5;
+    text-align: left;
+    min-width: 165px;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    margin: 0 auto;
+    margin-top: 16px;
+  }
+}
 @media screen and (min-width: 1158px) {
   .footer {
     padding: 100px 0;
-    width: 1158px;
-    display: block;
   }
 
   .footer-logo {
@@ -1005,6 +1032,8 @@ ul {
 
   .promo {
     margin-right: 120px;
+    display: flex;
+    flex-direction: row;
   }
   .footer-logo-text {
     font-weight: 400;
