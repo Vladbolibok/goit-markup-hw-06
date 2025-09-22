@@ -574,7 +574,7 @@ ul {
 }
 @media screen and (min-width: 1158px) {
   .team-item {
-    flex-basis: calc((100%-3 * 24px) / 4);
+    flex-basis: calc((100% -3 * 24px) / 4);
   }
   .work-team {
     padding-top: 120px;
@@ -660,8 +660,6 @@ ul {
 .portfolio-item-list {
   display: flex;
   flex-wrap: wrap;
-
-  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-item-list :last-child {
   margin-bottom: 0;
