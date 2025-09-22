@@ -1343,6 +1343,8 @@ ul {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 .privacy-policy {
   height: 16px;
@@ -1357,6 +1359,7 @@ ul {
   fill: transparent;
   align-items: center;
   margin-right: 8px;
+  flex-shrink: 0;
 }
 .link-privacy-policy {
   color: #4d5ae5;
@@ -1510,8 +1513,8 @@ ul {
   display: block;
   position: relative;
 }
-.nav-menu-mobile :last-child,
-.mobile-address-item :last-child {
+.nav-menu-mobile:last-child,
+.mobile-address-item:last-child {
   margin-bottom: 0;
 }
 .mobile-address-item {
